@@ -7,7 +7,7 @@ export const fetchWeather = async (city) => {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ru&appid=${API_KEY}`;
   const response = await fetch(url);
   if (!response.ok) {
-    throw new Error("Ошибка при загрузке данных!");
+    throw new Error("Ошибка при загрузке данных!!!");
   }
   return response.json();
 };
